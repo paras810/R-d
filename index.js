@@ -23,7 +23,7 @@ setInterval(() => {
     min = min <10 ? "0" + min :min
     sec = newDate.getSeconds()
     sec = sec <10 ? "0" + sec : sec
-    am_pm = hr>=12 ? " Day" : " Night"
+    am_pm = hr>=12 ? " PM" : " AM"
 
     showTime =` ${hr}:${min}:${sec}${am_pm}`
     time.innerHTML = showTime
